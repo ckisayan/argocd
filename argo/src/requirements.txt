@@ -1,0 +1,10 @@
+# .\Azure Purview Integration> # create and activate venv
+# py -m venv f-mantapurview1/.venv
+# f-mantapurview1\.venv\Scripts\activate
+# py -m pip install --upgrade pip
+# py -m pip install --upgrade -r  f-mantapurview1\requirements.txt
+#
+# Do not include azure-functions-worker as it may conflict with the Azure Functions platform
+python-dotenv
+requests
+pytz

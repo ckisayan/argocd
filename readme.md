@@ -24,8 +24,15 @@ https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 now lets deploy
 kubectl -n argocd apply -f .\argo\argo-cd\install.yaml
 
+create github repo
+commit your code
+create applicaiton.yaml
+
+run below to see what is out there
+kubectl -n argocd get pods
 
 
+kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 workflows
 https://argoproj.github.io/argo-workflows/quick-start/
