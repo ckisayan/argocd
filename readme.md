@@ -34,5 +34,24 @@ kubectl -n argocd get pods
 
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
+
+to login to argo cd
+https://localhost:8080/
+advance-proceed
+
+how to get pwd for admin user
+kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
+
+S2lQc3hQQk5lOXloMFJVaw==
+
+base64 decode above
+KiPsxPBNe9yh0RUk
+
+now create app
+kubectl apply -n argocd -f .\argo\argo-cd\app.yaml
+
+go back to ui
+you should see app
+
 workflows
 https://argoproj.github.io/argo-workflows/quick-start/
