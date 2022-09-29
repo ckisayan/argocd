@@ -14,8 +14,8 @@ spec:
         app: example-app       
     spec:
       containers: # List
-        - name: example-app-container
-          image: acrcki.azurecr.io/ckiapidemo:90
+        - name: example-app-container          
+          image: acrcki.azurecr.io/my_ns/example-app/example-app:v1
           ports:
             - containerPort: 80
 
