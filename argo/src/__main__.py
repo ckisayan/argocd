@@ -1,10 +1,10 @@
-from subprocess import CREATE_NEW_CONSOLE
 import time
 import sys
 import datetime
 
 print('start')
 def main():
+    #while True:
         when = datetime.datetime.utcnow().isoformat()
         sys.stderr.write('[%s] the default application is running ...' % when)
         print (when)
