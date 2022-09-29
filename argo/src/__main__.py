@@ -4,7 +4,7 @@ import datetime
 
 print('start')
 def main():
-    #while True:
+    while True:
         when = datetime.datetime.utcnow().isoformat()
         sys.stderr.write('[%s] the default application is running ...' % when)
         print (when)
